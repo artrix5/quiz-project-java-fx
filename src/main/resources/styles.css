@@ -1,0 +1,33 @@
+
+.button {
+  -fx-background-color: transparent;
+}
+
+.button:hover {
+  -fx-background-color: #F0E68C;
+}
+
+.progress-bar{
+  -fx-accent:red;
+}
+
+.choice-box {
+  -fx-background-color: white;
+  -fx-font-size: 15px;
+  -fx-padding: 3px;
+  -fx-border-color: gray;
+  -fx-border-width: 2px;
+}
+
+#leaderboards .table-column {
+  -fx-alignment: CENTER;
+}
+
+
+#leaderboards2 .table-column {
+  -fx-alignment: CENTER;
+}
+
+#changes .table-column {
+  -fx-alignment: CENTER;
+}

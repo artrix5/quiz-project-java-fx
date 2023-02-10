@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kvizprojekt.main.controllers.TableController">
+
+
+    <left>
+        <fx:include source="menu.fxml" />
+    </left>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="categoryColumn" prefWidth="100.0" text="Kategorija" />
+                  <TableColumn fx:id="questionColumn" prefWidth="220.0" text="Pitanje" />
+                  <TableColumn fx:id="answer1Column" minWidth="20.0" prefWidth="130.0" text="1. odgovor" />
+                  <TableColumn fx:id="answer2Column" minWidth="20.0" prefWidth="130.0" text="2. odgovor" />
+                  <TableColumn fx:id="answer3Column" minWidth="20.0" prefWidth="130.0" text="3. odgovor" />
+                  <TableColumn fx:id="answer4Column" minWidth="20.0" prefWidth="130.0" text="4. odgovor" />
+                  <TableColumn fx:id="correctAnswerColumn" prefWidth="150.0" text="Točan odgovor" />
+              </columns>
+            </TableView>
+            <GridPane style="-fx-background-color: #FFD700;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="290.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ToolBar prefHeight="40.0" prefWidth="980.0" style="-fx-background-color: linear-gradient(rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                     <items>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                          <buttons>
+                            <Button fx:id="add" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: GREEN;" text="DODAJ" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Button>
+                          </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                          <buttons>
+                            <Button fx:id="delete" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="25.0" prefWidth="229.0" style="-fx-background-color: RED;" text="OBRIŠI">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Button>
+                          </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                           <buttons>
+                              <Button mnemonicParsing="false" onAction="#handleFilterButton" prefHeight="25.0" prefWidth="229.0" style="-fx-background-color: white;" text="FILTRIRAJ">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Button>
+                           </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                           <buttons>
+                              <Button mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="25.0" prefWidth="229.0" style="-fx-background-color: YELLOW;" text="SPREMI">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Button>
+                           </buttons>
+                        </ButtonBar>
+                     </items>
+                  </ToolBar>
+                  <GridPane style="-fx-background-color: #FFD700;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="addAnswer1" promptText="Unesite 1. odgovor:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="addAnswer2" promptText="Unesite 2. odgovor:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="addAnswer3" promptText="Unesite 3. odgovor:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="addAnswer4" promptText="Unesite 4. odgovor:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="addCategory" promptText="Unesite kategoriju:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="addQuestion" promptText="Unesite pitanje:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="addCorrectAnswer" promptText="Unesite rješenje:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Button fx:id="clear" mnemonicParsing="false" onAction="#handleClearButton" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-text-fill: white; -fx-border-radius: 8; -fx-background-radius: 5;" text="OČISTI SVA POLJA" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                        <Label text="KATEGORIJA:" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="PITANJE:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="1. ODGOVOR:" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="2. ODGOVOR:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="3. ODGOVOR:" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="4. ODGOVOR:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="RJEŠENJE:" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </center>
+
+
+
+
+
+</BorderPane>

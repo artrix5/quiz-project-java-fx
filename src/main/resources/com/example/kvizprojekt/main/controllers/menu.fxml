@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kvizprojekt.main.controllers.MenuController">
+            <children>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <FontAwesomeIcon fill="GOLD" glyphName="QUESTION_CIRCLE" layoutX="113.0" layoutY="135.0" size="100" wrappingWidth="74.0" />
+                    </children></Pane>
+                <Button fx:id="showStartScreenButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showMainScreen" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Početni ekran" textFill="WHITE">
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="25" />
+                    </graphic>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="showDatabaseButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showDatabaseTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Baza podataka" textFill="WHITE">
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="DATABASE" size="25" />
+                    </graphic>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="showUserResultsButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showUserResultsTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Rezultati" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIGNAL" size="25" />
+                    </graphic>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+      <Button fx:id="showChangesButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showChangesTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Povijest" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="HISTORY" size="25" />
+         </graphic>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+      </Button>
+                <Button fx:id="signOutButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#signOut" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Odjavi se" textFill="WHITE">
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="25" />
+                    </graphic>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="closeButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#closeApplication" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Zatvori" textFill="WHITE">
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="25" />
+                    </graphic>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
