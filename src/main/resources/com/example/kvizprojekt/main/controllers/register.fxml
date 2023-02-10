@@ -34,7 +34,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="registerButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleRegister" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-background-radius: 8; -fx-text-fill: white; -fx-background-radius: 8;" text="IZRADITE RAČUN" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Button fx:id="registerButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleRegister" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-background-radius: 8; -fx-text-fill: white; -fx-background-radius: 8;" text="CREATE NEW ACCOUNT" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <GridPane.margin>
                   <Insets bottom="100.0" />
                </GridPane.margin>
@@ -43,12 +43,12 @@
                </font>
             </Button>
             <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-            <Label alignment="CENTER" text="Unesite korisničko ime:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <Label alignment="CENTER" text="Enter username:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" text="Unesite šifru:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label alignment="CENTER" text="Enter password:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="16.0" />
                </font>
@@ -56,7 +56,7 @@
                   <Insets bottom="50.0" />
                </GridPane.margin>
             </Label>
-            <Label alignment="CENTER" text="Ponovite upis šifre:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <Label alignment="CENTER" text="Repeat password:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                <font>
                   <Font size="16.0" />
                </font>
@@ -64,17 +64,17 @@
                   <Insets bottom="25.0" />
                </GridPane.margin>
             </Label>
-            <Label text="REGISTRACIJA" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label text="REGISTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <Label text="Imate račun? " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Label text="Have an account?" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Hyperlink onAction="#loginHyperlink" text="Prijavite se" underline="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Hyperlink onAction="#loginHyperlink" text="Login here." underline="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <GridPane.margin>
                   <Insets top="50.0" />
                </GridPane.margin>
@@ -91,7 +91,7 @@
             <Insets bottom="100.0" />
          </GridPane.margin>
       </FontAwesomeIcon>
-      <Label text="Imate svoj račun?" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Label text="Have an account?" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -99,12 +99,12 @@
             <Insets top="150.0" />
          </GridPane.margin>
       </Label>
-      <Hyperlink onAction="#loginHyperlink" text="PRIJAVITE SE." textFill="#ffee00" underline="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <Hyperlink onAction="#loginHyperlink" text="Login here." textFill="#ffee00" underline="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <GridPane.margin>
             <Insets top="210.0" />
          </GridPane.margin>
          <font>
-            <Font name="System Bold" size="15.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
       </Hyperlink>
    </children>

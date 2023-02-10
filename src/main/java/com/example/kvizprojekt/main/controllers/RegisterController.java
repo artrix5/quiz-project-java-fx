@@ -38,27 +38,27 @@ public class RegisterController extends RegisterValidation {
             String password2 = passwordField2.getText();
 
             if (username.isEmpty() || password1.isEmpty() || password2.isEmpty()) {
-                throw new AccountCreationException("Jedno ili više polja je prazno!");
+                throw new AccountCreationException("One or more fields are empty!");
             }
             if (!password1.equals(password2)) {
-                throw new AccountCreationException("Šifre se ne podudaraju!");
+                throw new AccountCreationException("The passwords do not match!");
             }
             if (isUsernameTaken(username)) {
-                throw new AccountCreationException("Korisničko ime je već zauzeto! Odaberite novo i pokušajte ponovo.");
+                throw new AccountCreationException("The username is already taken!");
             }
             String hashedPassword = hashPassword(password1);
 
             if (hashedPassword == null) {
-                throw new AccountCreationException("Greška prilikom unosa šifre. Molimo pokušajte ponovo kasnije.");
+                throw new AccountCreationException("Error creating account. Please try again.");
             }
             if (!writeCredentialsToFile(new User(username, hashedPassword, TypeOfUser.STANDARD_USER.getDescription(), 0))) {
-                throw new AccountCreationException("Greška prilikom stvaranja računa. Molimo pokušajte ponovo kasnije.");
+                throw new AccountCreationException("Error creating account. Please try again.");
             }
 
             Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
-            successAlert.setTitle("Uspjeh");
-            successAlert.setHeaderText("Račun je stvoren");
-            successAlert.setContentText("Vaš račun je uspješno stvoren!");
+            successAlert.setTitle("Success");
+            successAlert.setHeaderText("Account created");
+            successAlert.setContentText("Your account has been successfully created.");
             successAlert.showAndWait()
                     .ifPresent(response -> {
                         try {
@@ -76,8 +76,8 @@ public class RegisterController extends RegisterValidation {
         } catch (AccountCreationException e) {
             QuizApplication.logger.error("Dogodila se greška prilikom registracije: " + e.getMessage(), e);
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Greška!");
-            alert.setHeaderText("Greška tijekom registracije.");
+            alert.setTitle("Error!");
+            alert.setHeaderText("Error creating account.");
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }

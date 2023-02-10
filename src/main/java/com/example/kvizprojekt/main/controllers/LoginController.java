@@ -36,7 +36,7 @@ public class LoginController extends LoginValidation {
             }
         } else {
             QuizApplication.logger.warn("Neispravno uneseno korisničko ime ili šifra!");
-            System.out.println("Pristup odbijen!");
+            System.out.println("Access denied!");
         }
     }
 

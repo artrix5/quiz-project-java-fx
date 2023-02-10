@@ -90,29 +90,29 @@ public class TableController extends TableValidation {
         String correctAnswer = addCorrectAnswer.getText();
 
         Alert confirmAlert = new Alert(Alert.AlertType.CONFIRMATION);
-        confirmAlert.setTitle("Potvrda unosa pitanja");
-        confirmAlert.setHeaderText("Jeste li sigurni da želite unijeti ovo pitanje?");
+        confirmAlert.setTitle("Confirm change");
+        confirmAlert.setHeaderText("Are you sure you want to add this question?");
         Optional<ButtonType> result = confirmAlert.showAndWait();
         if (isAdmin(QuizApplication.username)) {
             if (result.isPresent() && result.get() == ButtonType.OK) {
                 try {
 
                     if (checkEmptyFields(category, question, answer1, answer2, answer3, answer4, correctAnswer)) {
-                        throw new EmptyFieldsException("Jedno ili više polja je prazno.");
+                        throw new EmptyFieldsException("One or more empty fields.");
                     }
 
                     if (checkDuplicates(answer1, answer2, answer3, answer4)) {
-                        throw new DuplicateAnswersException("Pronađeni isti odgovori. Svaki ponuđeni odgovor mora biti jedinstven.");
+                        throw new DuplicateAnswersException("Duplicate answers found. Every answer must be unique!");
                     }
 
                     if (checkMissingAnswer(answer1, answer2, answer3, answer4, correctAnswer)) {
-                        throw new MissingAnswerException("Rješenje koje ste unijeli ne postoji u ponuđenim odgovorima! Unesite ga kao jedan od ponuđenih odgovora.");
+                        throw new MissingAnswerException("The correct answer you entered doesn't exist in suggested answers.");
                     }
 
                     database.addQuestion(category, question, answer1, answer2, answer3, answer4, correctAnswer);
                     Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
-                    successAlert.setTitle("Uspjeh");
-                    successAlert.setHeaderText("Pitanje je uspješno uneseno");
+                    successAlert.setTitle("Success");
+                    successAlert.setHeaderText("The question has been successfully added.");
                     successAlert.showAndWait();
                     Question addedQuestion = new Question(category, question, answer1, answer2, answer3, answer4, correctAnswer);
                     data.add(addedQuestion);
@@ -129,11 +129,11 @@ public class TableController extends TableValidation {
                     QuizApplication.logger.info("Novo pitanje je uspješno dodano.");
 
                 } catch (EmptyFieldsException e) {
-                    showErrorDialog("Prazna polja.", e.getMessage());
+                    showErrorDialog("Empty fields.", e.getMessage());
                 } catch (DuplicateAnswersException e) {
-                    showErrorDialog("Pronađeni duplikati u odgovorima.", e.getMessage());
+                    showErrorDialog("Duplicate answers.", e.getMessage());
                 } catch (MissingAnswerException e) {
-                    showErrorDialog("Odgovor za ponuđeno rješenje ne postoji.", e.getMessage());
+                    showErrorDialog("The answer doesn't exist as a choice.", e.getMessage());
                 } catch (IOException e) {
                     QuizApplication.logger.error("Pogreška kod serijaliziranja objekta.", e);
                     e.printStackTrace();
@@ -142,7 +142,7 @@ public class TableController extends TableValidation {
             }
         }
         else {
-            showErrorDialog("Neovlašten pristup!", "Samo admin može dodavati nova pitanja.");
+            showErrorDialog("UNAUTHORIZED ACCESS!", "Only an admin can add new questions.");
         }
     }
 
@@ -151,14 +151,14 @@ public class TableController extends TableValidation {
         Question selectedQuestion = tableView.getSelectionModel().getSelectedItem();
         if (selectedQuestion == null) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setTitle("Nema odabira.");
-            alert.setHeaderText("Niste odabrali pitanje.");
-            alert.setContentText("Odaberite pitanje iz tablice.");
+            alert.setTitle("Warning");
+            alert.setHeaderText("No question selected!");
+            alert.setContentText("You must select a question from the table.");
             alert.showAndWait();
         } else {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setTitle("Potvrda brisanja.");
-            alert.setHeaderText("Jeste li sigurni da želite obrisati odabrano pitanje?");
+            alert.setTitle("Confirm change");
+            alert.setHeaderText("Are you sure that you want to delete selected question?");
             Optional<ButtonType> result = alert.showAndWait();
             if (isAdmin(QuizApplication.username)) {
                 if (result.isPresent() && result.get() == ButtonType.OK) {
@@ -180,7 +180,7 @@ public class TableController extends TableValidation {
                 }
             }
             else {
-                showErrorDialog("Neovlašten pristup!", "Samo admin može brisati pitanja.");
+                showErrorDialog("UNAUTHORIZED ACCESS!", "Only an admin can delete questions.");
             }
         }
     }
@@ -217,9 +217,9 @@ public class TableController extends TableValidation {
             String newCorrectAnswer = addCorrectAnswer.getText().trim().isEmpty() ? selectedQuestion.getCorrectAnswer() : addCorrectAnswer.getText();
 
             Alert confirmDialog = new Alert(Alert.AlertType.CONFIRMATION);
-            confirmDialog.setTitle("Potvrdite promjene.");
-            confirmDialog.setHeaderText("Potvrdite promjene koje ste napravili:");
-            confirmDialog.setContentText("Kategorija: " + newCategory + "\nPitanje: " + newQuestion + "\n1. odgovor: " + newAnswer1 + "\n2. odgovor: " + newAnswer2 + "\n3. odgovor: " + newAnswer3 + "\n4. odgovor: " + newAnswer4 + "\nTočan odgovor: " + newCorrectAnswer);
+            confirmDialog.setTitle("Confirm changes");
+            confirmDialog.setHeaderText("Confirm changes below:");
+            confirmDialog.setContentText("Category: " + newCategory + "\nQuestion: " + newQuestion + "\n1. answer: " + newAnswer1 + "\n2. answer: " + newAnswer2 + "\n3. answer: " + newAnswer3 + "\n4. answer: " + newAnswer4 + "\nCorrect answer: " + newCorrectAnswer);
 
             Optional<ButtonType> result = confirmDialog.showAndWait();
             if (isAdmin(QuizApplication.username)) {
@@ -227,11 +227,11 @@ public class TableController extends TableValidation {
                     try {
 
                         if (checkDuplicates(newAnswer1, newAnswer2, newAnswer3, newAnswer4)) {
-                            throw new DuplicateAnswersException("Pronađeni isti odgovori. Svaki ponuđeni odgovor mora biti jedinstven.");
+                            throw new DuplicateAnswersException("Duplicate answers found! Every answer must be unique.");
                         }
 
                         if (checkMissingAnswer(newAnswer1, newAnswer2, newAnswer3, newAnswer4, newCorrectAnswer)) {
-                            throw new MissingAnswerException("Rješenje koje ste unijeli ne postoji u ponuđenim odgovorima! Unesite ga kao jedan od ponuđenih odgovora.");
+                            throw new MissingAnswerException("The correct answer you entered doesn't exist in suggested answers.");
                         }
 
                         Question updatedQuestion = new Question(newCategory, selectedQuestion.getId(), newQuestion, newCorrectAnswer, newAnswer1, newAnswer2, newAnswer3, newAnswer4);
@@ -258,9 +258,9 @@ public class TableController extends TableValidation {
                         tableView.refresh();
 
                     } catch (MissingAnswerException e) {
-                        showErrorDialog("Odgovor za ponuđeno rješenje ne postoji.", e.getMessage());
+                        showErrorDialog("The answer doesn't exist as a choice.", e.getMessage());
                     } catch (DuplicateAnswersException e) {
-                        showErrorDialog("Pronađeni duplikati u odgovorima.", e.getMessage());
+                        showErrorDialog("Duplicate answers found.", e.getMessage());
                     } catch (SQLException | IOException e) {
                         QuizApplication.logger.error("Greška kod ažuriranja podataka.", e);
                         e.printStackTrace();
@@ -268,10 +268,10 @@ public class TableController extends TableValidation {
                     }
                 }
             } else {
-                showErrorDialog("Neovlašten pristup!", "Samo admin može mijenjati podatke.");
+                showErrorDialog("UNAUTHORIZED ACCESS!", "Only an admin can change data.");
             }
         } else {
-            showErrorDialog("Pitanje nije odabrano.","Odaberite pitanje iz tablice kako bi napravili željene promjene.");
+            showErrorDialog("No question selected.","Choose a question from the table to make wanted changes.");
         }
     }
 
@@ -288,7 +288,7 @@ public class TableController extends TableValidation {
 
     public void showErrorDialog(String headerText, String contentText) {
         Alert errorDialog = new Alert(Alert.AlertType.ERROR);
-        errorDialog.setTitle("Greška!");
+        errorDialog.setTitle("Error!");
         errorDialog.setHeaderText(headerText);
         errorDialog.setContentText(contentText);
         errorDialog.showAndWait();

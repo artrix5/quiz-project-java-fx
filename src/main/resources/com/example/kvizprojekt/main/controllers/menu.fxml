@@ -14,7 +14,7 @@
                     <children>
                         <FontAwesomeIcon fill="GOLD" glyphName="QUESTION_CIRCLE" layoutX="113.0" layoutY="135.0" size="100" wrappingWidth="74.0" />
                     </children></Pane>
-                <Button fx:id="showStartScreenButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showMainScreen" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Početni ekran" textFill="WHITE">
+                <Button fx:id="showStartScreenButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showMainScreen" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Home" textFill="WHITE">
                     <graphic>
                         <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="25" />
                     </graphic>
@@ -31,7 +31,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="showDatabaseButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showDatabaseTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Baza podataka" textFill="WHITE">
+                <Button fx:id="showDatabaseButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showDatabaseTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Database" textFill="WHITE">
                     <graphic>
                         <FontAwesomeIcon fill="WHITE" glyphName="DATABASE" size="25" />
                     </graphic>
@@ -45,7 +45,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="showUserResultsButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showUserResultsTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Rezultati" textFill="WHITE">
+                <Button fx:id="showUserResultsButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showUserResultsTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Leaderboards" textFill="WHITE">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -59,7 +59,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-      <Button fx:id="showChangesButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showChangesTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Povijest" textFill="WHITE">
+      <Button fx:id="showChangesButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#showChangesTable" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="History" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
@@ -73,7 +73,7 @@
             <Insets left="50.0" />
          </padding>
       </Button>
-                <Button fx:id="signOutButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#signOut" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Odjavi se" textFill="WHITE">
+                <Button fx:id="signOutButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#signOut" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Log out" textFill="WHITE">
                     <graphic>
                         <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="25" />
                     </graphic>
@@ -87,7 +87,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="closeButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#closeApplication" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Zatvori" textFill="WHITE">
+                <Button fx:id="closeButton" alignment="BASELINE_LEFT" graphicTextGap="8.0" mnemonicParsing="false" onAction="#closeApplication" prefHeight="50.0" prefWidth="300.0" stylesheets="@../../../../../styles.css" text="Close" textFill="WHITE">
                     <graphic>
                         <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="25" />
                     </graphic>

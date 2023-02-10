@@ -54,8 +54,8 @@ public class MenuController {
     @FXML
     public void signOut() throws IOException {
         Alert confirmDialog = new Alert(Alert.AlertType.CONFIRMATION);
-        confirmDialog.setTitle("Potvrdite odjavu");
-        confirmDialog.setHeaderText("Jeste li sigurni da se želite odjaviti?");
+        confirmDialog.setTitle("Confirm");
+        confirmDialog.setHeaderText("Are you sure you want to sign out?");
         Optional<ButtonType> result = confirmDialog.showAndWait();
         if (result.isPresent() && result.get() == ButtonType.OK) {
             showScreen(signOutButton, "login.fxml");

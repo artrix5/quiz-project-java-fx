@@ -17,13 +17,12 @@ public class QuizApplication extends Application {
     public static final DateTimeFormatter DATE_TIME_FORMAT_FULL = DateTimeFormatter.ofPattern("d.M.yyyy. H:mm");
 
     public static String username;
-
     @Override
     public void start(Stage stage) throws IOException {
         logger.info("Program je pokrenut.");
         FXMLLoader fxmlLoader = new FXMLLoader(QuizApplication.class.getResource("/com/example/kvizprojekt/main/controllers/login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
-        stage.setTitle("KvizProjekt");
+        stage.setTitle("QuizProject");
         stage.setScene(scene);
         stage.show();
 

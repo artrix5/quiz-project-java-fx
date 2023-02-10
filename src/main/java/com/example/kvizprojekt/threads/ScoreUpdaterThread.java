@@ -31,7 +31,7 @@ public class ScoreUpdaterThread implements Runnable {
 
                 for (Map.Entry<String, Integer> entry : scoresByUser.entrySet()) {
                     FileManager.updateHighScore(entry.getKey(), entry.getValue());
-                    System.out.printf("Nit 1 - Ažuriranje: %s %d\n", entry.getKey(), entry.getValue());
+                    System.out.printf("Thread 1 - Updating: %s %d\n", entry.getKey(), entry.getValue());
                 }
             }
             else {
@@ -44,7 +44,7 @@ public class ScoreUpdaterThread implements Runnable {
                     }
                 }
                 scoresByUser.clear();
-                System.out.println("Nit 2 - Korisnik " + highestScoringUser + " ima najveći broj bodova: " + highestScore);
+                System.out.println("Thread 2 - User " + highestScoringUser + " has the highest score: " + highestScore);
                 System.out.println(highestScoringUser);
             }
         }

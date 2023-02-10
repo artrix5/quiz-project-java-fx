@@ -30,7 +30,7 @@ public class StartScreenController {
     @FXML
     public void initialize() {
 
-        usernameLabel.setText("Dobrodošli, " + QuizApplication.username + ".");
+        usernameLabel.setText("Welcome, " + QuizApplication.username + ".");
         List<String> categories = database.getCategories();
         categoryChoiceBox.getItems().addAll(categories);
         categoryChoiceBox.getSelectionModel().selectFirst();
@@ -45,16 +45,16 @@ public class StartScreenController {
 
         if (selectedCategory == null || selectedNumberOfQuestions == 0) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Greška!");
-            alert.setHeaderText("Nepotpun odabir.");
-            alert.setContentText("Odaberite broj pitanja i kategoriju prije nego što započnete kviz.");
+            alert.setTitle("Error!");
+            alert.setHeaderText("Empty fields.");
+            alert.setContentText("You must choose a category and number of questions.");
             alert.showAndWait();
         }
 
         else {
             try {
                 if (database.getNumberOfQuestionsInCategory(selectedCategory) < selectedNumberOfQuestions) {
-                    throw new NotEnoughQuestionsException("Nedovoljan broj pitanja u odabranoj kategoriji!");
+                    throw new NotEnoughQuestionsException("Not enough questions in selected category.");
                 }
                 QuizController.category = selectedCategory;
                 QuizController.numberOfQuestions = selectedNumberOfQuestions;
@@ -66,8 +66,8 @@ public class StartScreenController {
             } catch (NotEnoughQuestionsException e) {
                 QuizApplication.logger.warn("Nedovoljan broj pitanja u odabranoj kategoriji!");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Greška!");
-                alert.setHeaderText("Nedovoljan broj pitanja.");
+                alert.setTitle("Error!");
+                alert.setHeaderText("Not enough questions.");
                 alert.setContentText(e.getMessage());
                 alert.showAndWait();
             } catch (IOException e) {

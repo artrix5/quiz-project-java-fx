@@ -40,35 +40,35 @@
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-      <RadioButton fx:id="answer1" mnemonicParsing="false" text="1. odgovor" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <RadioButton fx:id="answer1" mnemonicParsing="false" text="1. answer" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin></RadioButton>
-      <RadioButton fx:id="answer2" mnemonicParsing="false" text="2. odgovor" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <RadioButton fx:id="answer2" mnemonicParsing="false" text="2. answer" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin></RadioButton>
-      <RadioButton fx:id="answer3" mnemonicParsing="false" text="3. odgovor" GridPane.columnIndex="1" GridPane.rowIndex="6">
+      <RadioButton fx:id="answer3" mnemonicParsing="false" text="3. answer" GridPane.columnIndex="1" GridPane.rowIndex="6">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin></RadioButton>
-      <RadioButton fx:id="answer4" mnemonicParsing="false" text="4. odgovor" GridPane.columnIndex="1" GridPane.rowIndex="8">
+      <RadioButton fx:id="answer4" mnemonicParsing="false" text="4. answer" GridPane.columnIndex="1" GridPane.rowIndex="8">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin></RadioButton>
-      <Button fx:id="submitButton" mnemonicParsing="false" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-text-fill: white; -fx-background-radius: 5; -fx-border-radius: 8;" text="POTVRDI" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+      <Button fx:id="submitButton" mnemonicParsing="false" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-text-fill: white; -fx-background-radius: 5; -fx-border-radius: 8;" text="SUBMIT" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
          <font>
             <Font name="System Bold" size="20.0" />
          </font></Button>

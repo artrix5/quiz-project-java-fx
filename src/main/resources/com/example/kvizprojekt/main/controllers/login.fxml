@@ -33,13 +33,13 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField fx:id="usernameField" focusTraversable="false" promptText="Korisničko ime:" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black; -fx-font-size: 15;" stylesheets="@../../../../../styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-            <PasswordField fx:id="passwordField" focusTraversable="false" promptText="Šifra:" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black; -fx-font-size: 15px;" stylesheets="@../../../../../styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <TextField fx:id="usernameField" focusTraversable="false" promptText="Username:" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black; -fx-font-size: 15;" stylesheets="@../../../../../styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <PasswordField fx:id="passwordField" focusTraversable="false" promptText="Password:" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: black; -fx-font-size: 15px;" stylesheets="@../../../../../styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
             </PasswordField>
-            <Button mnemonicParsing="false" onAction="#handleLogin" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-border-radius: 8; -fx-text-fill: white; -fx-background-radius: 5;" text="PRIJAVA" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <Button mnemonicParsing="false" onAction="#handleLogin" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-border-radius: 8; -fx-text-fill: white; -fx-background-radius: 5;" text="LOGIN" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></Button>
@@ -61,7 +61,7 @@
             <Insets bottom="100.0" />
          </GridPane.margin>
       </FontAwesomeIcon>
-      <Label text="Nemate svoj račun?" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <Label text="Don't have an account?" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
          <GridPane.margin>
             <Insets top="150.0" />
          </GridPane.margin>
@@ -69,12 +69,12 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Hyperlink onAction="#registerHyperlink" text="REGISTRIRAJTE SE." textFill="#ffee00" underline="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <Hyperlink onAction="#registerHyperlink" text="REGISTER HERE." textFill="#ffee00" underline="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
          <GridPane.margin>
             <Insets top="210.0" />
          </GridPane.margin>
          <font>
-            <Font name="System Bold" size="15.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
          <opaqueInsets>
             <Insets />

@@ -29,13 +29,13 @@
          <children>
             <TableView id="changes" fx:id="changesTableView" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../../../styles.css" GridPane.rowIndex="1">
               <columns>
-                <TableColumn fx:id="userColumn" minWidth="30.0" prefWidth="150.0" text="KORISNIK:" />
-                <TableColumn fx:id="dateColumn" minWidth="30.0" prefWidth="200.0" text="DATUM I VRIJEME IZMJENE:" />
-                  <TableColumn fx:id="typeColumn" minWidth="30.0" prefWidth="150.0" text="VRSTA IZMJENE:" />
-                  <TableColumn fx:id="questionOldValueColumn" minWidth="30.0" prefWidth="250.0" text="STARA VRIJEDNOST PITANJA: " />
-                  <TableColumn fx:id="oldAnswerValueColumn" minWidth="30.0" prefWidth="250.0" text="STARI TOČAN ODGOVOR:" />
-                  <TableColumn fx:id="questionNewValueColumn" minWidth="30.0" prefWidth="250.0" text="NOVA VRIJEDNOST PITANJA:" />
-                  <TableColumn fx:id="newAnswerValueColumn" minWidth="30.0" prefWidth="250.0" text="NOVI TOČAN ODGOVOR:" />
+                <TableColumn fx:id="userColumn" minWidth="30.0" prefWidth="100.0" text="USER:" />
+                <TableColumn fx:id="dateColumn" minWidth="30.0" prefWidth="150.0" text="DATE AND TIME:" />
+                  <TableColumn fx:id="typeColumn" minWidth="30.0" prefWidth="100.0" text="CHANGE:" />
+                  <TableColumn fx:id="questionOldValueColumn" minWidth="30.0" prefWidth="160.0" text="OLD QUESTION VALUE:" />
+                  <TableColumn fx:id="oldAnswerValueColumn" minWidth="30.0" prefWidth="160.0" text="OLD ANSWER VALUE:" />
+                  <TableColumn fx:id="questionNewValueColumn" minWidth="30.0" prefWidth="150.0" text="NOVA VRIJEDNOST PITANJA:" />
+                  <TableColumn fx:id="newAnswerValueColumn" minWidth="30.0" prefWidth="150.0" text="NOVI TOČAN ODGOVOR:" />
               </columns>
             </TableView>
             <GridPane style="-fx-background-color: #FFD700;">
@@ -50,19 +50,19 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField fx:id="enterDateTimeTextField" promptText="Unesite datum i vrijeme:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#filter" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-text-fill: white; -fx-border-radius: 8; -fx-background-radius: 5;" text="FILTRIRAJ" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <TextField fx:id="enterDateTimeTextField" promptText="Enter date and time:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#filter" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-text-fill: white; -fx-border-radius: 8; -fx-background-radius: 5;" text="FILTER:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font></Button>
-                  <TextField fx:id="enterChangeTextField" promptText="Unesite vrstu izmjene:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                  <TextField fx:id="enterUserTextField" promptText="Unesite korisnika:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                  <TextField fx:id="enterChangeTextField" promptText="Enter change:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <TextField fx:id="enterUserTextField" promptText="Enter username:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
                   <Label text="POVIJEST IZMJENA" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="30.0" />
                      </font>
                   </Label>
-                  <Label text="Korisnik:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                  <Label text="Username:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -70,7 +70,7 @@
                         <Insets right="15.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label text="Datum i vrijeme:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Label text="Date and time:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <GridPane.margin>
                         <Insets right="15.0" />
                      </GridPane.margin>
@@ -78,7 +78,7 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label text="Vrsta izmjene:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                  <Label text="Change:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                      <GridPane.margin>
                         <Insets right="15.0" />
                      </GridPane.margin>

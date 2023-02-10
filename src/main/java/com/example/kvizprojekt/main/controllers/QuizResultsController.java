@@ -40,7 +40,7 @@ public class QuizResultsController {
         progress.setProgress(percentage.getResult());
 
         FileManager.writeScoreToFile(QuizApplication.username, finalScore, formattedDateTime, category);
-        scoreLabel.setText(finalScore + " od "+ maxPoints + " bodova");
+        scoreLabel.setText(finalScore + " out of "+ maxPoints + " points");
 
         ScoreUpdaterThread thread1 = new ScoreUpdaterThread(true);
         Thread t1 = new Thread(thread1);

@@ -105,9 +105,9 @@ public class QuizController {
 
         if (selectedAnswer == null) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Greška!");
-            alert.setHeaderText("Odgovor nije odabran!");
-            alert.setContentText("Morate odabrati odgovor prije nego što potvrdite vaš odabir.");
+            alert.setTitle("Error!");
+            alert.setHeaderText("No answer selected!");
+            alert.setContentText("You must choose an answer before submitting!.");
             alert.showAndWait();
             return;
         }
@@ -135,20 +135,20 @@ public class QuizController {
         }
 
         if (currentQuestionIndex < questionsSize- 1) {
-            submitButton.setText("Iduće pitanje");
+            submitButton.setText("Next question");
         }
         else {
-            submitButton.setText("ZAVRŠI KVIZ");
+            submitButton.setText("FINISH QUIZ");
         }
 
 
         submitButton.setOnAction(event -> {
             switch (submitButton.getText()) {
-                case "Iduće pitanje" -> {
+                case "Next question" -> {
                     currentQuestionIndex++;
                     showQuestion();
                 }
-                case "ZAVRŠI KVIZ" -> {
+                case "FINISH QUIZ" -> {
                     try {
                         showResults();
                     } catch (IOException e) {
