@@ -9,7 +9,7 @@ The program also includes a history screen which shows all changes admin made to
 The number of questions the user can pick are: 5, 10, 15 and 20 by default, but it can be easily modified to include more if wanted.
 For every correct answer the user gets 10 points.
 
-Java version: Java 19
+Java version: Java 19&nbsp;
 &nbsp;
 Programs used: IntelliJ IDEA Ultimate, Scene Builder
 
