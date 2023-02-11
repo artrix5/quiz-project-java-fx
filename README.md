@@ -11,7 +11,7 @@ For every correct answer the user gets 10 points.
 
 <pre>
 Java version: Java 19
-Programs used: IntelliJ IDEA Ultimate, Scene Builder
+Programs used: IntelliJ IDEA Ultimate, Scene Builder, H2 Database
 </pre>
 
 ![login_screen](https://user-images.githubusercontent.com/110913178/218225616-bdf1a8b0-223e-435f-a6e2-aa8da075469a.png)
