@@ -15,7 +15,7 @@ For every correct answer the user gets 10 points.
 
 ![home_screen](https://user-images.githubusercontent.com/110913178/218225798-e8190afc-4554-4a74-9ad0-8c8bbb331283.png)
 
-![database_screen](https://user-images.githubusercontent.com/110913178/218225842-82e39c4c-3125-4a34-b203-7764786570d3.png)
+![database_screen](https://user-images.githubusercontent.com/110913178/218227732-0d72632b-661d-489a-b4c0-18bd71ecaaf0.png)
 
 ![quiz_screen](https://user-images.githubusercontent.com/110913178/218225978-cf7a0bfb-c7d6-42bc-af74-85a8e5454b35.png)
 
