@@ -10,6 +10,7 @@ The number of questions the user can pick are: 5, 10, 15 and 20 by default, but 
 For every correct answer the user gets 10 points.
 
 Java version: Java 19
+&nbsp;
 Programs used: IntelliJ IDEA Ultimate, Scene Builder
 
 ![login_screen](https://user-images.githubusercontent.com/110913178/218225616-bdf1a8b0-223e-435f-a6e2-aa8da075469a.png)
