@@ -78,7 +78,7 @@ public class QuizController {
         }
 
         if (currentQuestionIndex < questionsSize) {
-            submitButton.setText("Potvrdi");
+            submitButton.setText("SUBMIT");
             submitButton.setOnAction(event -> submitButtonClicked());
         }
 

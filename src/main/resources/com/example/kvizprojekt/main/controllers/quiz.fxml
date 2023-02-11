@@ -31,9 +31,9 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label fx:id="questionLabel" text="Label" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <Label fx:id="questionLabel" alignment="CENTER" contentDisplay="CENTER" text="Label" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
          <font>
-            <Font name="System Bold" size="30.0" />
+            <Font name="System Bold" size="28.0" />
          </font></Label>
       <ProgressBar fx:id="progressBar" prefWidth="900.0" progress="0.0" stylesheets="@../../../../../styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 8; -fx-background-radius: 8; -fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2" />

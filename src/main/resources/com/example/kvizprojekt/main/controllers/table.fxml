@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kvizprojekt.main.controllers.TableController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kvizprojekt.main.controllers.TableController">
 
 
     <left>
@@ -94,42 +103,42 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <TextField fx:id="addAnswer1" promptText="Unesite 1. odgovor:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="3">
+                        <TextField fx:id="addAnswer1" promptText="Enter 1. answer:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="3">
                            <GridPane.margin>
                               <Insets left="50.0" right="50.0" />
                            </GridPane.margin>
                         </TextField>
-                        <TextField fx:id="addAnswer2" promptText="Unesite 2. odgovor:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <TextField fx:id="addAnswer2" promptText="Enter 2. answer:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <GridPane.margin>
                               <Insets left="50.0" right="50.0" />
                            </GridPane.margin>
                         </TextField>
-                        <TextField fx:id="addAnswer3" promptText="Unesite 3. odgovor:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="5">
+                        <TextField fx:id="addAnswer3" promptText="Enter 3. answer:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="5">
                            <GridPane.margin>
                               <Insets left="50.0" right="50.0" />
                            </GridPane.margin>
                         </TextField>
-                        <TextField fx:id="addAnswer4" promptText="Unesite 4. odgovor:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <TextField fx:id="addAnswer4" promptText="Enter 4. answer:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="5">
                            <GridPane.margin>
                               <Insets left="50.0" right="50.0" />
                            </GridPane.margin>
                         </TextField>
-                        <TextField fx:id="addCategory" promptText="Unesite kategoriju:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="1">
+                        <TextField fx:id="addCategory" promptText="Enter category:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="1">
                            <GridPane.margin>
                               <Insets left="50.0" right="50.0" />
                            </GridPane.margin>
                         </TextField>
-                        <TextField fx:id="addQuestion" promptText="Unesite pitanje:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <TextField fx:id="addQuestion" promptText="Enter question:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <GridPane.margin>
                               <Insets left="50.0" right="50.0" />
                            </GridPane.margin>
                         </TextField>
-                        <TextField fx:id="addCorrectAnswer" promptText="Unesite rješenje:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="7">
+                        <TextField fx:id="addCorrectAnswer" promptText="Enter correct answer:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.rowIndex="7">
                            <GridPane.margin>
                               <Insets left="50.0" right="50.0" />
                            </GridPane.margin>
                         </TextField>
-                        <Button fx:id="clear" mnemonicParsing="false" onAction="#handleClearButton" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-text-fill: white; -fx-border-radius: 8; -fx-background-radius: 5;" text="OČISTI SVA POLJA" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                        <Button fx:id="clear" mnemonicParsing="false" onAction="#handleClearButton" style="-fx-background-color: linear-gradient(#464d55, #25292e); -fx-text-fill: white; -fx-border-radius: 8; -fx-background-radius: 5;" text="CLEAR ALL FIELDS" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font></Button>

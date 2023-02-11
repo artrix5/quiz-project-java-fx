@@ -1,2 +1,17 @@
 2023-02-10 20:01:45,884 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:23] Program je pokrenut.
 2023-02-10 20:25:21,216 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:23] Program je pokrenut.
+2023-02-10 21:11:45,960 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:19:17,255 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:21:24,048 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:24:07,706 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:27:38,676 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [TableController.java:179] Odabrano pitanje je uspješno izbrisano.
+2023-02-11 01:27:40,590 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [TableController.java:179] Odabrano pitanje je uspješno izbrisano.
+2023-02-11 01:27:41,946 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [TableController.java:179] Odabrano pitanje je uspješno izbrisano.
+2023-02-11 01:29:12,315 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:29:21,620 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:30:55,820 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:31:59,569 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:33:44,321 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:38:32,883 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [QuizApplication.java:22] Program je pokrenut.
+2023-02-11 01:38:51,110 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [TableController.java:179] Odabrano pitanje je uspješno izbrisano.
+2023-02-11 01:38:52,495 INFO [JavaFX Application Thread] c.e.k.m.QuizApplication [TableController.java:179] Odabrano pitanje je uspješno izbrisano.

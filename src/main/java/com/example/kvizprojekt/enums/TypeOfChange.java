@@ -1,7 +1,7 @@
 package com.example.kvizprojekt.enums;
 
 public enum TypeOfChange {
-    ADDED("DODANO"), DELETED("IZBRISANO"), CHANGED("PROMIJENJENO");
+    ADDED("ADDED"), DELETED("DELETED"), CHANGED("CHANGED");
     private String description;
     TypeOfChange(String description) {
         this.description = description;

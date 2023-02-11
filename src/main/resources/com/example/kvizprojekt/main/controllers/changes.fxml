@@ -34,8 +34,8 @@
                   <TableColumn fx:id="typeColumn" minWidth="30.0" prefWidth="100.0" text="CHANGE:" />
                   <TableColumn fx:id="questionOldValueColumn" minWidth="30.0" prefWidth="160.0" text="OLD QUESTION VALUE:" />
                   <TableColumn fx:id="oldAnswerValueColumn" minWidth="30.0" prefWidth="160.0" text="OLD ANSWER VALUE:" />
-                  <TableColumn fx:id="questionNewValueColumn" minWidth="30.0" prefWidth="150.0" text="NOVA VRIJEDNOST PITANJA:" />
-                  <TableColumn fx:id="newAnswerValueColumn" minWidth="30.0" prefWidth="150.0" text="NOVI TOČAN ODGOVOR:" />
+                  <TableColumn fx:id="questionNewValueColumn" minWidth="30.0" prefWidth="150.0" text="NEW QUESTION VALUE:" />
+                  <TableColumn fx:id="newAnswerValueColumn" minWidth="30.0" prefWidth="150.0" text="NEW ANSWER VALUE:" />
               </columns>
             </TableView>
             <GridPane style="-fx-background-color: #FFD700;">
@@ -57,7 +57,7 @@
                      </font></Button>
                   <TextField fx:id="enterChangeTextField" promptText="Enter change:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                   <TextField fx:id="enterUserTextField" promptText="Enter username:" style="-fx-border-color: black; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                  <Label text="POVIJEST IZMJENA" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Label text="History" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="30.0" />
                      </font>
