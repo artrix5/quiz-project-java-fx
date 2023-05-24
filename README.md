@@ -1,4 +1,7 @@
 # QuizProject
+
+My first Java project:
+
 A JavaFX project I made for my Java programming class. It gives users an option to select a category, number of questions and play a quiz. 
 The program uses an H2 database to load questions.
 The program also includes a register and login screen so that each user can track their own progress and high score.
