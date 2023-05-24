@@ -1,5 +1,7 @@
 # QuizProject
-A JavaFX project I made for my Java programming class. It gives users an option to select a category, number of questions and play a quiz. 
+My first Java project
+
+A JavaFX project I made for my Java programming class. It gives users an option to select a category, a number of questions and play a quiz. 
 The program uses an H2 database to load questions.
 The program also includes a register and login screen so that each user can track their own progress and high score.
 There are two types of users: admins and standard users. An admin can modify quizzes, create new questions and delete them. If you want to login as an admin type in "admin" for both username and password.
