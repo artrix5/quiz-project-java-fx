@@ -22,14 +22,3 @@ High scores are updated via threads, allowing real-time score tracking and displ
 
 ![login_screen](https://user-images.githubusercontent.com/110913178/218225616-bdf1a8b0-223e-435f-a6e2-aa8da075469a.png)
 
-![register_screen](https://user-images.githubusercontent.com/110913178/218225703-6a17705d-eb07-4b27-ad9f-9d57d0e1c862.png)
-
-![database_screen](https://user-images.githubusercontent.com/110913178/218227732-0d72632b-661d-489a-b4c0-18bd71ecaaf0.png)
-
-![quiz_screen](https://user-images.githubusercontent.com/110913178/218225978-cf7a0bfb-c7d6-42bc-af74-85a8e5454b35.png)
-
-![leaderboards_screen](https://user-images.githubusercontent.com/110913178/218226091-1f4c7b7e-94e9-46dc-9939-fedadec04d63.png)
-
-![history_screen](https://user-images.githubusercontent.com/110913178/218227329-23ab8bff-0067-4e72-aa48-5add75edbabd.png)
-
-
